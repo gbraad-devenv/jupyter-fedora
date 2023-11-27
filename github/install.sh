@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # clean workspace folder
-rm -rf /workspaces/fedora
-mkdir /workspaces/fedora
-ln -s /workspaces/fedora ~/Projects
-git init /workspaces/fedora
+rm -rf /workspaces/jupyter-fedora
+mkdir /workspaces/jupyter-fedora
+ln -s /workspaces/jupyter-fedora ~/Projects
+git init /workspaces/jupyter-fedora
 
 cd ~
 
