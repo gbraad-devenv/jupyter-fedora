@@ -1,0 +1,5 @@
+FROM ghcr.io/gbraad-devenv/fedora/dotfiles:41
+
+USER gbraad
+
+RUN pip install ipykernel
