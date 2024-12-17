@@ -1,12 +1,17 @@
 {
     "name": "Fedora developer environment",
-    //"dockerFile": "Dockerfile",
-    "image": "ghcr.io/gbraad-devenv/fedora/base:38",
-    "context": "..",
-    "runArgs": [ "--cap-add=NET_ADMIN", "--cap-add=NET_RAW", "--device=/dev/net/tun" ],
-    "postStartCommand": "github/install.sh",
-    "extensions": [
-         "ms-vscode.Theme-TomorrowKit",
-         "ritwickdey.LiveServer"
-    ]
+    "image": "ghcr.io/gbraad-devenv/fedora/base:41",
+
+    "runArgs": [ "--cap-add=NET_ADMIN", "--cap-add=NET_RAW", "--device=/dev/net/tun", "--device=/dev/fuse"],
+    "postStartCommand": ".github/install.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.Theme-TomorrowKit",
+                "ritwickdey.LiveServer",
+                "ms-toolsai.jupyter",
+                "ms-python.python"
+            ]
+        }
+    }
 }
