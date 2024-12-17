@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 ghcr.io/gbraad-devenv/fedora/base:41
+FROM --platform=linux/amd64 ghcr.io/gbraad-devenv/fedora/dotfiles:41
 
 USER root
 
